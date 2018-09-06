@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -17,4 +18,5 @@ func main() {
 	})
 
 	router.Run(":3300")
+	log.Println("server is running on port 3300")
 }
